@@ -731,7 +731,7 @@ visul_bell_duration 0.5
 #: occurs for the specified number of seconds. Set to zero to disable.
 
 # visual_bell_color none
-visual_bell_color white
+# visual_bell_color white
 #: The color used by visual bell. Set to none will fall back to
 #: selection background color. If you feel that the visual bell is too
 #: bright, you can set it to a darker color.
@@ -1127,7 +1127,7 @@ visual_bell_color white
 
 #: The foreground and background colors.
 
-background_opacity 1.0
+background_opacity 1
 # background_opacity 0.5
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2468,3 +2468,9 @@ background_opacity 1.0
 
 #: }}}
 
+
+
+# BEGIN_KITTY_THEME
+# 1984 Dark
+include current-theme.conf
+# END_KITTY_THEME
