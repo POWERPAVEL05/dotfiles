@@ -49,9 +49,14 @@ return require('packer').startup(function(use)
  	 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-use 'voldikss/vim-floaterm'
+  use 'voldikss/vim-floaterm'
+  
+  use {
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
+  }
 
-	--use 'iitchyny/lightline.vim'
 --Palenight-Theme
   use 'wilmanbarrios/palenight.nvim'
 

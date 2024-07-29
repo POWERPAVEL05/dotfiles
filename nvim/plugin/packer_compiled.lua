@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/powerpavel/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/powerpavel/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/powerpavel/.local/share/nvim/site/pack/packer/start/lualine.nvim",
