@@ -21,5 +21,9 @@ vim.api.nvim_set_keymap('n','<leader>wd',':vsp<CR>',{noremap= true})
 
 vim.api.nvim_set_keymap('n','H',':bprevious<CR>',{})
 vim.api.nvim_set_keymap('n','L',':bnext<CR>',{})
+
+--Lazygit
+
+vim.api.nvim_set_keymap('n','<leader>gg',':FloatermNew --height=0.9 --width=0.9 lazygit<CR>',{})
 --vim.keymap.set("n","<leader>ee",vim.cmd.Ex)
 
