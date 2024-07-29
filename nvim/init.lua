@@ -1,2 +1,1 @@
 require("haupt")
-print("hello")

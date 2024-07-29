@@ -3,6 +3,7 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -26,8 +27,28 @@ return require('packer').startup(function(use)
 	   requires = {
 		'nvim-tree/nvim-web-devicons', -- optional
 	   },
-	vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
   }
+
+  use {
+	  'akinsho/bufferline.nvim',
+	   tag = "*",
+	   requires = {
+			'nvim-tree/nvim-web-devicons',
+		}
+  }
+  use{
+	'goolord/alpha-nvim',
+		requires ={
+			'nvim-lua/plenary.nvim',
+		},
+
+  }
+
+  use {
+    	'nvim-lualine/lualine.nvim',
+ 	 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+	--use 'iitchyny/lightline.vim'
 --Palenight-Theme
   use 'wilmanbarrios/palenight.nvim'
 
