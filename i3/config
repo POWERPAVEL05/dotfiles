@@ -41,7 +41,9 @@ smart_gaps on
 
 #bindsym $mod+shift+plus exec i3-msg "gaps inner current plus 5" 
 #bindsym $mod+shift+minus exec i3-msg "gaps inner current minus 5"
-
+#---Layout---
+exec setxkbmap -layout de,ru
+exec setxkbmap -option 'grp:alt_shift_toggle' 
 #---Color---
 
 default_border pixel 3

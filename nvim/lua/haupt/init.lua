@@ -10,7 +10,7 @@ require("bufferline").setup{}
 --Theme
 vim.cmd[[colorscheme onedark]]
 --Linenumbering
-vim.cmd[[set relativenumber]]
+vim.cmd[[set number relativenumber]]
 require('lualine').setup()
 
 vim.cmd[[set tabstop=4]]
